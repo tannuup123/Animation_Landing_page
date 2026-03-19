@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import carPic from "../../public/car.png";
 
 export default function HeroSection() {
 
@@ -205,7 +206,7 @@ export default function HeroSection() {
           className="absolute left-0 z-30 flex items-center"
         >
           <img
-            src="/car.png"
+            src={carPic.src}
             alt="Sports Car"
             // Ensure width is predictable so our JavaScript math doesn't mess up
             className="w-[200px] md:w-[300px] object-contain drop-shadow-2xl"
